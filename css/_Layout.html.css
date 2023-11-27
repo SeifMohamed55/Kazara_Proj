@@ -167,3 +167,73 @@ button.accept-policy {
   font-family: 'Times New Roman', Times, serif;
   
 }
+
+
+#mainbox{
+  
+  position:fixed;
+  left: 20px; 
+  width: 50px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+
+  
+  color: #FFFFFF;
+  font-size: 30px;
+  margin-bottom: 10px;
+ 
+  text-transform: uppercase;
+}
+
+
+.sidemenu{
+  position: fixed;
+  top: 0px;
+  left:0px;
+  height: 100%;
+  
+  width:0px;
+  background-color:#184C78; 
+  z-index: 1;
+  padding-top: 100px;
+  overflow: hidden;
+  transition: all 0.3s;
+  
+
+}
+.sidemenu a{
+  padding: 8px;
+  font-size: 30px;
+  color: #FFFFFF;
+  display: block;
+  text-decoration: none;
+   justify-content:space-between;
+  
+   margin-bottom: 30px;
+}
+.sidemenu i{
+  margin-right: 8px;
+}
+
+
+
+.sidemenu a:hover{
+
+  color: #FFFFFF;
+  margin-left: 10px;
+  transition: 0.2s;
+  top: 0px;
+}
+
+.sidemenu .closebtn{
+  color: #FFFFFF;
+  position: absolute;
+  top: 0px;
+}
+
+
+#menu{
+  transition: 0.6s;
+}
+
