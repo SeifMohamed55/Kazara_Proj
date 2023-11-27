@@ -56,7 +56,7 @@ button.accept-policy {
 }
 
 .blog .box-container .box{
-  background:#184c78;
+  background:#707070;
   margin:1.5rem;
   border-radius: .5rem;
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.9);
@@ -130,7 +130,7 @@ button.accept-policy {
 }
 
 .blog .box-container .box{
-  background:#184c78;
+  background:#343A40;
   margin:1.5rem;
   border-radius: .5rem;
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.9);
@@ -154,15 +154,15 @@ button.accept-policy {
 }
 
 .blog .box-container .box .info h3{
-  color:var(--lightColor);
-  font-size: 2.5rem;
+  color:#A8AAAD;
+  font-size: 15px;
   font-family: 'Times New Roman', Times, serif;
 
 }
 
 .blog .box-container .box .info p{
   color:#ffffff;
-  font-size: 1.5rem;
+  font-size: 15px;
   padding:1rem 0;
   font-family: 'Times New Roman', Times, serif;
   
