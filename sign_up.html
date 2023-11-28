@@ -8,12 +8,17 @@
     <link href="./lib/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet" />
     <link href="./css/lux.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="log_in.css">
+    <script>
+        function showMessage(){
+            alert("User registered successfully!");
+        }
+    </script>
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark border-bottom box-shadow mb-3 d-flex flex-row">
             <div class="container-fluid">
-                <a class="navbar-brand" href="_Layout.html">Kazary</a>
+                <a class="navbar-brand" href="index.html">Kazary</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -21,16 +26,16 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex align-items-end">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="_Layout.html">fasfas</a>
+                            <a class="nav-link text-light" href="index.html">fasfas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="_Layout.html">Stsdadsatedasdss</a>
+                            <a class="nav-link text-light" href="index.html">Stsdadsatedasdss</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="_Layout.html">aadad</a>
+                            <a class="nav-link text-light" href="index.html">aadad</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="_Layout.html">clothes</a>
+                            <a class="nav-link text-light" href="index.html">clothes</a>
                         </li>                      
                     </ul>
                 </div>
@@ -40,7 +45,7 @@
     <div class="container h-75">
         <div class="row align-items-center h-100">
             <div class="col-5 mx-auto">
-                <form>
+                <form action="sign_up.html" onsubmit="showMessage()">
                     <h1 style="text-align: center;" class="mb-5">sign up</h1>
                     <div class="mb-3">
                         <label for="inputEmail4" class="form-label">Email</label>
@@ -63,7 +68,7 @@
                         <input type="tel" class="form-control border border-dark" id="inputState" placeholder="No. 123-45-678 " pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
                     </div>
                     <div>
-                        <button type="submit" class="btn btn-primary" style="width: 100%;padding: 12px 20px;margin: 8px 0; box-sizing: border-box;">Sign up</button>
+                        <button type="submit"  class="btn btn-primary" style="width: 100%;padding: 12px 20px;margin: 8px 0; box-sizing: border-box;">Sign up</button>
                         <a href="log_in.html" class="btn btn-primary" style="width: 100%;padding: 12px 20px;margin: 8px 0; box-sizing: border-box;">log in</a>
                     </div>
                     </form>
