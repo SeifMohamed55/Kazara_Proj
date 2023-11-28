@@ -13,7 +13,7 @@ a {
 
 .btn-primary {
   color: #fff;
-  background-color: #1b6ec2;
+  background-color: #000000;
   border-color: #1861ac;
 }
 
@@ -171,18 +171,17 @@ button.accept-policy {
 
 #mainbox{
   
-  position:fixed;
+  position:absolute;
   left: 20px; 
   width: 50px;
   border: none;
   border-radius: 8px;
   cursor: pointer;
-
-  
-  color: #FFFFFF;
+  color: #343A40;
   font-size: 30px;
   margin-bottom: 10px;
- 
+  margin-top: 25px;
+  margin-left: 10px;
   text-transform: uppercase;
 }
 
@@ -192,9 +191,8 @@ button.accept-policy {
   top: 0px;
   left:0px;
   height: 100%;
-  
   width:0px;
-  background-color:#184C78; 
+  background-color:rgb(22, 22, 22); 
   z-index: 1;
   padding-top: 100px;
   overflow: hidden;
@@ -205,12 +203,11 @@ button.accept-policy {
 .sidemenu a{
   padding: 8px;
   font-size: 30px;
-  color: #FFFFFF;
+  color: #697579;
   display: block;
   text-decoration: none;
-   justify-content:space-between;
-  
-   margin-bottom: 30px;
+  justify-content:space-between;
+  margin-bottom: 30px;
 }
 .sidemenu i{
   margin-right: 8px;
@@ -220,20 +217,21 @@ button.accept-policy {
 
 .sidemenu a:hover{
 
-  color: #FFFFFF;
+  color: #A8AAAD;
   margin-left: 10px;
   transition: 0.2s;
   top: 0px;
 }
 
 .sidemenu .closebtn{
-  color: #FFFFFF;
+  color: #A8AAAD;
   position: absolute;
   top: 0px;
+  transition: 0.2s;
 }
 
 
 #menu{
-  transition: 0.6s;
+  transition: 0.5s;
 }
 
