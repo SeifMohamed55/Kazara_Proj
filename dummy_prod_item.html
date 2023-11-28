@@ -12,8 +12,11 @@
     <link href="./lib/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet" />
     <link href="./css/lux.min.css" rel="stylesheet" />
     <script src="js/_Layout.js"></script>
-
-
+    <script>
+        function showMessage(){
+            alert("Thank you for your feedback !!");
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -77,6 +80,26 @@
                     <h4>  300.00 EGP </h4>
                     <p> Relaxed fit shirt made of cotton fabric. Stand collar. Long sleeves. Button-up front. </p>
                     <a href="payment.html" class="btn btn-primary">Buy Now</a>
+                </div>
+                <br><br>
+                <div class="feedback">
+                    <form action="dummy_prod_item.html" onsubmit="showMessage()">
+                    <h3>Feedback</h3>
+                    <textarea name="message" rows="10" cols="65" class="form-control border border-dark" placeholder="Did you like our product service ?"></textarea>
+                    <br><br>
+                    <input type="submit" value="Submit" class="btn btn-primary" >
+                    </form>
+                    <br><br> <br><br>
+                    <h3>others feedback</h3>
+                    <br> <br> <br>
+                    <h4>  Mohamed001 </h4>
+                    <p> this product was pretty good ! </p>
+                    <br>
+                    <h4>  oobd39 </h4>
+                    <p> the shipping was late but the product was as good as expected </p>
+                    <br>
+                    <h4>  alaa2 </h4>
+                    <p> honestly didnt expect it to be that good !!!! </p>
                 </div>
             </div>
     </section>
