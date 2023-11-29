@@ -63,8 +63,8 @@
             <a href=""class="closebtn" onclick="closeFunction">&times;</a>
           </div>
     </header>
-    <div class="container h-75">
-        <div class="row align-items-center h-100">
+    <div class="container">
+        <div class="row align-items-center">
             <div class="col-5 mx-auto">
                 <form action="" onsubmit="showMessage()">
                     <br><br>
@@ -78,34 +78,39 @@
                     </div>
                     <div>
                         <button type="submit"  class="btn btn-primary" style="width: 100%;padding: 12px 20px;margin: 8px 0; box-sizing: border-box;">ban</button>
-                        <button type="submit"  class="btn btn-primary" style="width: 100%;padding: 12px 20px;margin: 8px 0; box-sizing: border-box;">unban</button>
                     </div>
-                    </form>
-                    <br><br>
-                    <h1 style="text-align: center;" class="mb-5">all users</h1>
-                    <div class="mb-3">
-                        <table border="1">
-                        <tr>
-                            <th>Name</th>
-                            <th>Reason</th>
-                            <th>Banned/Unbanned</th>
-                        </tr>
-                        <tr>
-                            <td>Alfreds Futterkiste</td>
-                            <td>Maria Anders</td>
-                            <td>Germany</td>
-                        </tr>
-                        <tr>
-                            <td>Centro comercial Moctezuma</td>
-                            <td>Francisco Chang</td>
-                            <td>Mexico</td>
-                        </tr>
-                    </table>
-                    </div>
-                    <br><br><br><br>
+                </form>
+                <a href="#"  class="btn btn-primary" style="width: 100%;padding: 12px 20px;margin: 8px 0; box-sizing: border-box;">unban</a>
             </div>
         </div>
+        <div class="row align-items-center">
+            <h1 style="text-align: center;" class="mb-2 mt-5">all users</h1>
+                <div class="mb-3">
+                    <table class="table table-striped table-dark" >
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Name</th>
+                                <th>Reason</th>
+                                <th>Banned/Unbanned</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-striped " id="tbodyy">
+                            <tr>
+                                <td>AlfredsFutterkiste@gmail.com</td>
+                                <td>Maria Anders</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td>CentroComercialMoctezuma@gmail.com</td>
+                                <td>Francisco Chang</td>
+                                <td>No</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+        </div>
     </div> 
+    <br><br><br><br>
     <footer class="border-top footer text-muted" style="background-color: #343A40;">
         <div class="container" style="-webkit-text-fill-color: #A8AAAD;">
             &copy; 2023 - Kazary - <a href="policy.html" style="color: #A8AAAD;">Privacy Policy</a>
