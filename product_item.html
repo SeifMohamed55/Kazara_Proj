@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,17 +16,19 @@
 
 
 </head>
+
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark border-bottom box-shadow mb-3 d-flex flex-row">
+        <nav
+            class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark border-bottom box-shadow mb-3 d-flex flex-row">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">Kazary</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex align-items-end">
-                    <div class="navbar-collapse collapse d-sm-inline-flex align-items-end" style="margin-left: 75%;"> 
+                    <div class="navbar-collapse collapse d-sm-inline-flex align-items-end" style="margin-left: 75%;">
                     </div>
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item mx-auto">
@@ -34,19 +37,19 @@
                         <li class="nav-item">
                             <a class="nav-link text-light mx-auto my-auto" href="log_in.html">log in</a>
                         </li>
-                    </ul>    
+                    </ul>
                 </div>
             </div>
         </nav>
-        <div id="mainbox" onclick="openFunction();" >&#9776;</div>
+        <div id="mainbox" onclick="openFunction();">&#9776;</div>
         <div id="menu" class="sidemenu">
             <a href="offers.html"><i class="fa-solid fa-hand-holding-dollar"></i>offers</a>
             <a href="Avilable days.html"><i class="fa-solid fa-calendar"></i>available days</a>
             <a href="trips.html"><i class="fa-solid fa-suitcase-rolling"></i> track order</a>
             <a href="feedback.html"><i class="fa-solid fa-question"></i>invite a friend</a>
             <a href="log_in.html">log out</a>
-            <a href=""class="closebtn" onclick="closeFunction">&times;</a>
-          </div>
+            <a href="" class="closebtn" onclick="closeFunction">&times;</a>
+        </div>
     </header>
     <div class="container" style="margin-bottom: 10%;">
         <div class="row">
@@ -54,30 +57,33 @@
                 <label for="searchInput">Search</label>
                 <div class="input-group">
                     <input type="text" class="form-control border border-dark">
-                    <a  class="btn btn-primary" href="index.html" ><i class="bi bi-search ml-2"></i> Search</a>
+                    <a class="btn btn-primary" href="index.html"><i class="bi bi-search ml-2"></i> Search</a>
                 </div>
             </form>
         </div>
         <section class="blog" id="blog">
-                <div class="slider-container">
-                    <div class="slider" style="margin-bottom: 50px;">
-                        <div class="slide box">
-                            <img src="iconimgs/product_item1.jpg">
-                        </div>
-                        <div class="slide box">
-                            <img src="iconimgs/product_item1-back.jpg">
-                        </div>
+            <div class="slider-container">
+                <div class="slider" style="margin-bottom: 50px;">
+                    <div class="slide box">
+                        <img src="iconimgs/product_item1.jpg">
                     </div>
-                    <div class="info">
-                        <h3>CREASED-EFFECT SHIRT</h3>
-                        <h4>  300.00 EGP </h4>
-                        <p> Relaxed fit shirt made of cotton fabric. Stand collar. Long sleeves. Button-up front. </p>
-                        <a href="log_in.html" class="btn btn-primary">Buy Now</a>
+                    <div class="slide box">
+                        <img src="iconimgs/product_item1-back.jpg">
                     </div>
                 </div>
+                <div class="info">
+                    <h3>CREASED-EFFECT SHIRT</h3>
+                    <h4> 300.00 EGP </h4>
+                    <p> Relaxed fit shirt made of cotton fabric. Stand collar. Long sleeves. Button-up front. </p>
+                    <a href="log_in.html" class="btn btn-primary">Buy Now</a>
+                    <div style="margin-top: 5%;">
+                        <h3>Sold by: <a href="seller_preview.html">Jessie pinkman</a> .</h3>
+                    </div>
+                </div>
+            </div>
         </section>
     </div>
-    
+
 
     <footer class="border-top footer text-muted" style="background-color: #343A40;">
         <div class="container" style="-webkit-text-fill-color: #A8AAAD;">
@@ -89,4 +95,5 @@
     <script src="./js/site.js"></script>
     <script src="./js/slider.js"></script>
 </body>
+
 </html>
