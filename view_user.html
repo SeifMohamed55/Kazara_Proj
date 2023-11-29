@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kazary</title>
+    <link rel="stylesheet" href="css/index.html.css">
+    <link rel="stylesheet" href="./lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="./LeagueWiki.styles.css" asp-append-version="true" />
+    <link href="./lib/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet" />
+    <link href="./css/lux.min.css" rel="stylesheet" />
+    <link href="view_user.css" rel="stylesheet" />
+    <script src="js/_Layout.js"></script>
+    <script>
+        function showMessage(){
+            alert("User banned successfully");
+        }
+    </script>
+
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark border-bottom box-shadow mb-3 d-flex flex-row">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Kazary</a>
+                <div class="navbar-collapse collapse d-sm-inline-flex">
+                    <ul class="navbar-nav flex-grow-1" style="margin-left: 0%;">
+                        <li class="nav-item text-light my-auto">
+                            <a class="text-light nav-link" href="#">Banned/Unbanned users</a> 
+                        </li>
+                        <li class="nav-item my-auto">
+                             <a class="text-light nav-link" href="#">Remove a product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="add_admin.html" class="text-light nav-link">Add admin</a>
+                        </li>
+                    </ul>    
+                </div>
+                <div class="navbar-collapse collapse d-sm-inline-flex">
+                    <ul class="navbar-nav flex-grow-1" style="margin-left: 0%;">
+                        <li class="nav-item mx-auto text-light h3 my-auto">
+                            welcome 
+                        </li>
+                        <li class="nav-item mx-3 my-auto">
+                             <a class="text-light mx-auto" href="#"><i class="bi bi-person-circle"></i>Adminstration</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="log_in.html" class="btn btn-primary w-100 my-auto">Log out</a>
+                        </li>
+                    </ul>    
+                </div>
+            </div>
+        </nav>
+        <div id="mainbox" class="container" style="margin-left: -5px; margin-top: -10px;" onclick="openFunction();" >&#9776;</div>
+        <div id="menu" class="sidemenu">
+            <a href="offers.html"><i class="fa-solid fa-hand-holding-dollar"></i>offers</a>
+            <a href="Avilable days.html"><i class="fa-solid fa-calendar"></i>available days</a>
+            <a href="trips.html"><i class="fa-solid fa-suitcase-rolling"></i> trips</a>            
+            <a href="feedback.html"><i class="fa-solid fa-question"></i>Feedback</a>
+            <a href="Special orders.html">Special orders</a>
+            <a href=""class="closebtn" onclick="closeFunction">&times;</a>
+          </div>
+    </header>
+    <div class="container h-75">
+        <div class="row align-items-center h-100">
+            <div class="col-5 mx-auto">
+                <form action="" onsubmit="showMessage()">
+                    <br><br>
+                    <h1 style="text-align: center;" class="mb-5">ban user</h1>
+                    <div class="mb-3">
+                        <label for="inputEmail4" class="form-label">Email</label>
+                        <input type="email" class="form-control border border-dark" id="inputEmail4" placeholder ="1231@yahoo.com" required>
+                        <br>
+                        <label for="inputEmail4" class="form-label">Reason (optional)</label>
+                        <textarea name="message" rows="10" cols="65" class="form-control border border-dark" placeholder="what did he do ?!"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit"  class="btn btn-primary" style="width: 100%;padding: 12px 20px;margin: 8px 0; box-sizing: border-box;">ban</button>
+                        <button type="submit"  class="btn btn-primary" style="width: 100%;padding: 12px 20px;margin: 8px 0; box-sizing: border-box;">unban</button>
+                    </div>
+                    </form>
+                    <br><br>
+                    <h1 style="text-align: center;" class="mb-5">all users</h1>
+                    <div class="mb-3">
+                        <table border="1">
+                        <tr>
+                            <th>Name</th>
+                            <th>Reason</th>
+                            <th>Banned/Unbanned</th>
+                        </tr>
+                        <tr>
+                            <td>Alfreds Futterkiste</td>
+                            <td>Maria Anders</td>
+                            <td>Germany</td>
+                        </tr>
+                        <tr>
+                            <td>Centro comercial Moctezuma</td>
+                            <td>Francisco Chang</td>
+                            <td>Mexico</td>
+                        </tr>
+                    </table>
+                    </div>
+                    <br><br><br><br>
+            </div>
+        </div>
+    </div> 
+    <footer class="border-top footer text-muted" style="background-color: #343A40;">
+        <div class="container" style="-webkit-text-fill-color: #A8AAAD;">
+            &copy; 2023 - Kazary - <a href="policy.html" style="color: #A8AAAD;">Privacy Policy</a>
+        </div>
+    </footer>
+    <script src="./lib/jquery/dist/jquery.min.js"></script>
+    <script src="./lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/site.js"></script>
+    <script src="./js/slider.js"></script>
+    </body>
