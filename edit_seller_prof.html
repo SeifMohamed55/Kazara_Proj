@@ -41,37 +41,44 @@
         </nav>
     </header>
     <div class="container">
-        <div class="row align-items-center">
-            <div class="col-5 mx-auto">
-                <form action="seller_prof_page.html" onsubmit="showMessage()">
-                    <h1 style="text-align: center;" class="mb-5">Edit Profile information</h1>
-                    <div class="mb-3">
+        <div class="row">
+            <div class="col-5">
+                <form action="admin_prof_page.html" onsubmit="showMessage()" enctype="multipart/form-data" onchange="SetImgSrc()">
+                    <h1 style="text-align: center;" class="mb-3">Edit Profile info</h1>
+                    <div class="mb-2">
                         <label for="inputEmail4" class="form-label">Email</label>
                         <input type="email" class="form-control border border-dark" id="inputEmail4" placeholder ="1231@yahoo.com" >
                     </div>
-                    <div class="mb-3">
+                    <div class="mb-2">
                         <label for="inputPassword4" class="form-label">Password</label>
                         <input type="password" class="form-control border border-dark" id="inputPassword4" placeholder="Make sure you remember it" >
                     </div>
-                    <div class="mb-3">
+                    <div class="mb-2">
                         <label for="username" class="form-label">Name</label>
                         <input type="text" class="form-control border border-dark" id="username" placeholder="lucky_patcher123" >
                     </div>
-                    <div class="mb-3">
+                    <div class="mb-2">
                         <label for="inputAddress" class="form-label">Address</label>
                         <input type="text" class="form-control border border-dark" id="inputAddress" placeholder="1234 Main St" >
                     </div>
-                    <div class="mb-3">
+                    <div class="mb-2">
                         <label for="inputState" class="form-label">Phone number</label>
                         <input type="tel" class="form-control border border-dark" id="inputState" placeholder="No. 123-45-678 " pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" >
                     </div>
+                    <div class="mb-2">
+                        <label for="ImagePath"></label>
+                        <input type="file" class="form-control" name="imgFormFile" id="imgFormFile" accept=".png,.jpg">
+                    </div>      
                     <div>
-                        <button type="submit"  class="btn btn-primary" style="width: 100%;padding: 12px 20px;margin: 8px 0; box-sizing: border-box;"><i class="bi bi-pencil-square" style="margin-left: -5px;"></i>Edit</button>
+                        <button type="submit"  class="btn btn-primary" style="width: 100%;padding: 12px 20px;margin: 8px 0; box-sizing: border-box;"><i class="bi bi-pencil-square" style="margin-left: -5px;"></i> Edit</button>
                     </div>
                 </form>
             </div>
+            <div class="col-6 d-flex flex-column" style="margin-bottom: 50px;">
+                <img src="" id="photo" name="photo" class="img-thumbnail col-6" style="height:200px;width:200px;margin-left:auto">
+            </div>
+            <a href="seller_prof_page.html" class="col-2 btn btn-outline-danger d-flex justify-content-center align-items-end" style="margin-left: 10px;">Discard changes</a>
         </div>
-        <a href="seller_prof_page.html" class=" btn btn-outline-danger">Discard changes</a>
     </div>
     <footer class="border-top footer text-muted" style="background-color: #343A40;margin-top: 100px;">
         <div class="container h-100" style="-webkit-text-fill-color: #A8AAAD;">
@@ -81,4 +88,10 @@
     <script src="./lib/jquery/dist/jquery.min.js"></script>
     <script src="./lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./js/site.js"></script>
+    <script>
+        function SetImgSrc() {
+            document.getElementById("photo").src = window.URL.createObjectURL(document.getElementById("imgFormFile").files[0]);
+
+        }
+    </script>
 </body>
