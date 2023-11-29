@@ -11,7 +11,7 @@
     <script src="js/_Layout.js"></script>
     <script>
         function showMessage(){
-            alert("User registered successfully!");
+            alert("profile updated successfully!");
         }
     </script>
 </head>
@@ -21,9 +21,22 @@
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">Kazary</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="navbar-collapse collapse d-sm-inline-flex align-items-end">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item text-light h3 my-auto" style="margin-left: 60%;">
+                            welcome 
+                        </li>
+                        <li class="nav-item  my-auto">
+                             <a class="text-light" href="#"><i class="bi bi-person-circle"></i>Adminstration</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="log_in.html" class="btn btn-primary my-auto">Log out</a>
+                        </li>
+                    </ul>    
+                </div>
             </div>
         </nav>
     </header>
@@ -58,6 +71,7 @@
                 </form>
             </div>
         </div>
+        <a href="admin_prof_page.html" class=" btn btn-outline-danger">Discard changes</a>
     </div>
     <footer class="border-top footer text-muted" style="background-color: #343A40;margin-top: 100px;">
         <div class="container h-100" style="-webkit-text-fill-color: #A8AAAD;">
