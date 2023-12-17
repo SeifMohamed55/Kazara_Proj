@@ -58,13 +58,13 @@ function removeLastRow() {
   var table = document.getElementById("boom");
 
   // Check if there are rows in the table
-  if (table.rows.length > 0) {
+  if (table.rows.length > 1) {
     // Delete the last row
     table.deleteRow(table.rows.length - 1);
     document.getElementById('inputEmail4').value="";
     document.getElementById('inputReason5').value="";
   } else {
-    console.warn("Table is empty, cannot remove last row.");
+    alert("No Users to unban!");
   }
 }
 
