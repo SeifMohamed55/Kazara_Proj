@@ -41,3 +41,30 @@ function getData() {
      document.getElementById('inputReason5').value="";
 }
 
+function removeLastRow() {
+    var email = document.getElementById('inputEmail4').value;
+    if(email == ""){
+        alert("Email cannot be empty");
+        return;
+    }
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+        alert('Email address is invalid');
+        document.getElementById('inputEmail4').value="";
+        document.getElementById('inputReason5').value="";
+        return;
+    }
+  // Get the table element by its ID
+  var table = document.getElementById("boom");
+
+  // Check if there are rows in the table
+  if (table.rows.length > 0) {
+    // Delete the last row
+    table.deleteRow(table.rows.length - 1);
+    document.getElementById('inputEmail4').value="";
+    document.getElementById('inputReason5').value="";
+  } else {
+    console.warn("Table is empty, cannot remove last row.");
+  }
+}
+

@@ -68,7 +68,7 @@
                     </div>
                 </form>
                 <div>
-                    <a href="seller_prof_page.html"  class="btn btn-outline-danger" style="width: 100%;padding: 12px 20px;margin: 8px 0; box-sizing: border-box;">Remove that product</a>
+                    <a href="seller_prof_page.html"  class="btn btn-outline-danger" onclick="confirmMessage()" style="width: 100%;padding: 12px 20px;margin: 8px 0; box-sizing: border-box;">Remove that product</a>
                 </div>
             </div>
         </div>
@@ -81,4 +81,21 @@
     <script src="./lib/jquery/dist/jquery.min.js"></script>
     <script src="./lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./js/site.js"></script>
+    <script>
+        function confirmMessage() {
+            // Display a confirmation dialog
+            var confirmation = confirm("Are you sure you want to remove this product?");
+            
+            // Check the user's choice
+            if (confirmation) {
+                // If the user clicks "OK," you can proceed with the removal or perform other actions
+                alert("Product removed successfully!");
+                
+                // You can also redirect the user to the specified page                
+            } else {
+                // If the user clicks "Cancel," you can choose not to proceed with the removal
+                alert("Product removal canceled.");
+            }
+        }
+        </script>
 </body>

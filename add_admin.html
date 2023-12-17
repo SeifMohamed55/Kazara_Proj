@@ -51,7 +51,7 @@
             <div class="row">
                 <br><h2 class="mt-2 text-center">Add Admin</h2><br>
                 <div class="col-6" style="margin-top: -20px;">
-                    <form action="admin_prof_page.html" enctype="multipart/form-data" onchange="SetImgSrc()">
+                    <form action="admin_prof_page.html" enctype="multipart/form-data" onchange="SetImgSrc()" onsubmit="showMessage()">
                         <div class="mb-3">
                             <label for="inputEmail4" class="form-label">Email</label>
                             <input type="email" class="form-control border border-dark" id="inputEmail4" placeholder ="1231@yahoo.com" required>
@@ -102,5 +102,11 @@
             document.getElementById("photo").src = window.URL.createObjectURL(document.getElementById("imgFormFile").files[0]);
 
         }
+        function showMessage(){
+            alert("New Admin added successfully!");
+        }
     </script>
+     
+       
+    
 </body>
